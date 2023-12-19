@@ -1,0 +1,251 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #b9b9b9; /* Nando grey color */
+  margin: 0; /* Adjust top and bottom margins for spacing */
+}
+
+.nav-bar {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-left: 2vw; /* Add left padding */
+  padding-right: 2vw; /* Add right padding */
+  font-size: 1.2vw;
+  background-color: #b9b9b9;
+  color: #000000;
+  gap: 2vw; /* Adjust the gap as needed */
+  border-bottom: 0.1vw solid #000000; /* Add border properties */
+}
+
+.nav-bar-h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-left: 2vw; /* Add left padding */
+  padding-right: 2vw; /* Add right padding */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 2vw; /* Adjust the gap as needed */
+}
+
+.nav-bar-h3 h3 {
+  cursor: pointer; /* Apply cursor pointer to the h3 elements */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect for both background and color */
+  background-color: #b9b9b9; /* Set initial background color */
+  color: #000000; /* Set initial font color */
+  padding: 1vw 2vw; /* Add padding for spacing */
+  border-radius: 1.5vw; /* Adjust the border-radius as needed */
+}
+
+.nav-bar-h3 h3:not(.nav-bar-h3-name):hover {
+  background-color: #000000; /* Change background color on hover */
+  color: #b9b9b9; /* Change font color on hover */
+}
+
+.nav-bar-h3-name {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    display: none; /* Hide the nav bar on smaller screens */
+  }
+}
+
+/*---------HOME----------*/
+
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw; /* Adjust the gap as needed */
+  padding-top: 5vw; /* Adjust padding based on viewport width */
+  text-align: center;
+  font-size: large;
+}
+
+.face {
+  width: 15vw; /* Half of the viewport width */
+  height: 15vw; /* Half of the viewport width */
+  border-radius: 50%; /* Ensures a perfect circle */
+  overflow: hidden;
+  display: flex;
+}
+
+.face img {
+  padding: 2vw; /* Adjust padding based on viewport width */
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+}
+
+.Heady {
+  padding-left: 20vw; /* Adjust padding based on viewport width */
+  padding-right: 20vw; /* Adjust padding based on viewport width */
+}
+
+.Home-Name {
+  font-size: 1.5vw; /* Adjust as needed */
+}
+
+.Home-Prof {
+  font-size: 1vw; /* Adjust as needed */
+}
+
+.resume {
+  display: inline-block;
+  width: 15vw; /* Set width based on viewport width */
+}
+
+.resume button {
+  padding: 1vw 2vw; /* Adjust padding based on viewport width */
+  background-color: #b9b9b9;
+  color: white;
+  font-size: 1vw; /* Adjust font size based on viewport width */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adding transition for color change */
+}
+
+.resume button:hover {
+  background-color: #518755; /* Change color on hover */
+}
+
+@media only screen and (max-width: 768px) {
+  .Home {
+    flex-direction: column; /* Change flex direction on smaller screens */
+  }
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+
+  .layer1 {
+    background-image: url('./assets/layered-steps-haikei.svg');
+    transform: rotate(180deg); /* Flip the image 180 degrees */
+  }
+
+
+/*---------ABOUT----------*/
+
+.About {
+  background-color: #000000; /* Change background color on hover */
+  color: #518755;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw; /* Adjust the gap as needed */
+  padding: 10vw; /* Adjust padding based on viewport width */
+  padding-left: 20vw; /* Adjust padding based on viewport width */
+  padding-right: 20vw; /* Adjust padding based on viewport width */
+  text-align: center;
+}
+
+.About h1 {
+  font-size: 1.5vw;
+}
+
+.About p {
+  font-size: 1vw; /* Adjust font size based on viewport width */
+}
+
+.layer2 {
+  background-image: url('./assets/layered-steps-haikei.svg');
+}
+
+/*---------SKILLS----------*/
+
+.Skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw; /* Adjust the gap as needed */
+  padding: 10vw; /* Adjust padding based on viewport width */
+  padding-left: 20vw; /* Adjust padding based on viewport width */
+  padding-right: 20vw; /* Adjust padding based on viewport width */
+  text-align: center;
+}
+
+.Skills h1 {
+  font-size: 1.5vw;
+}
+
+.Skills p {
+  font-size: 1vw; /* Adjust font size based on viewport width */
+}
+
+
+/*---------PROJECTS----------*/
+
+.Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw; /* Adjust the gap as needed */
+  padding: 10vw; /* Adjust padding based on viewport width */
+  padding-left: 20vw; /* Adjust padding based on viewport width */
+  padding-right: 20vw; /* Adjust padding based on viewport width */
+  text-align: center;
+}
+
+.Projects h1 {
+  font-size: 1.5vw;
+}
+
+.Projects p {
+  font-size: 1vw; /* Adjust font size based on viewport width */
+}
+
+
+/*---------CONTACT----------*/
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw; /* Adjust the gap as needed */
+  padding: 10vw; /* Adjust padding based on viewport width */
+  padding-left: 20vw; /* Adjust padding based on viewport width */
+  padding-right: 20vw; /* Adjust padding based on viewport width */
+  text-align: center;
+}
+
+.Contact h1 {
+  font-size: 1.5vw;
+}
+
+.Contact p {
+  font-size: 1vw; /* Adjust font size based on viewport width */
+}
+
+
+/*---------FOOTER----------*/
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw; /* Adjust the gap as needed */
+  padding: 10vw; /* Adjust padding based on viewport width */
+  padding-left: 20vw; /* Adjust padding based on viewport width */
+  padding-right: 20vw; /* Adjust padding based on viewport width */
+  text-align: center;
+}
+
+.Footer h1 {
+  font-size: 1.5vw;
+}
+
+.Footer p {
+  font-size: 1vw; /* Adjust font size based on viewport width */
+}
