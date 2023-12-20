@@ -73,18 +73,24 @@ body {
   height: 22vw;
   border-radius: 50%;
   overflow: hidden;
-  display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border: 2px solid black; /* Add a thin black border */
+  position: relative; /* Add position to use for image positioning */
+  margin: 2vw; /* Adjust margin as needed */
 }
 
 .face img {
   width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 50%;
-  display: flex;
+  height: 100%; /* Ensure image covers the container */
+  display: block; /* Remove any default inline spacing */
+  object-fit: cover; /* Cover the container without distortion */
+  border-radius: 50%; /* Maintain circular shape */
+  position: absolute; /* Position the image absolutely */
+  top: 0;
+  left: 0;
 }
+
+
 
 .Heady {
   padding-left: 10vw; /* Adjust padding based on viewport width */
@@ -154,7 +160,7 @@ body {
   gap: 2vw; /* Adjust the gap between elements */
   padding: 10vw; /* Adjust padding as needed */
   text-align: center;
-  
+  font-size: 1.0vw; /* Adjust font size based on viewport width */
 }
 
 .aboutMe {
@@ -176,7 +182,6 @@ body {
   width: 100%;
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
 }
 
 #container3D canvas {
@@ -210,11 +215,42 @@ body {
 }
 
 #Skills h1 {
-  font-size: 1.5vw;
+  font-size: 2.5vw; /* Adjust font size based on viewport width */
 }
 
 #Skills p {
   font-size: 1vw; /* Adjust font size based on viewport width */
+}
+
+.lists-container {
+  display: flex;
+}
+
+.list {
+  margin-right: 5vw; /* Adjust margin based on viewport width */
+  font-size: 0.75vw; /* Adjust font size based on viewport width */
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list h2 {
+  font-size: 1.5vw; /* Adjust font size based on viewport width */
+  margin-bottom: 0.8vw; /* Adjust margin based on viewport width */
+}
+
+.list li {
+  margin-bottom: 0.4vw; /* Adjust margin based on viewport width */
+}
+
+.languages li::before,
+.tools li::before {
+  content: "•"; /* Unicode for a bullet point */
+  margin-right: 0.5vw; /* Adjust margin based on viewport width */
+  color: #000000; /* Customize the color */
+  font-weight: bold;
 }
 
 .layer1 {
@@ -244,6 +280,61 @@ body {
   font-size: 1vw; /* Adjust font size based on viewport width */
 }
 
+.projects {
+  display: flex;
+  gap: 20px; /* Spacing between columns */
+}
+
+.project2 {
+  flex: 1 1 30vw; /* Adjust width of each column */
+  max-width: 30vw; /* Maximum width of each column */
+  padding: 10px;
+}
+
+.project2 h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #000000;
+
+}
+
+.project2 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project1 {
+  flex: 1 1 30vw; /* Adjust width of each column */
+  padding: 10px;
+}
+
+.project1 h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #000000;
+}
+
+.project1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project-btn {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  text-decoration: none;
+  color: black;
+  border: #000000 1px solid;
+  border-radius: 4px;
+}
+
+.project-btn:hover {
+  background-color: #5188F0;
+}
+
 .layer2 {
   background-image: url('./assets/layered-steps-haikei-1.svg');
   transform: rotate(180deg); /* Flip the image 180 degrees */
@@ -252,43 +343,91 @@ body {
 /*---------CONTACT----------*/
 
 #ContactMe {
+  text-align: center;
+  padding: 50px 0;
+  padding-bottom: 10vw; /* Adjust padding based on viewport width */
+}
+
+#ContactMe h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw; /* Adjust the gap as needed */
-  padding: 10vw; /* Adjust padding based on viewport width */
-  padding-left: 20vw; /* Adjust padding based on viewport width */
-  padding-right: 20vw; /* Adjust padding based on viewport width */
-  text-align: center;
 }
 
-#Contact h1 {
-  font-size: 1.5vw;
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
-#Contact p {
-  font-size: 1vw; /* Adjust font size based on viewport width */
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: #000000 1px solid;
 }
+
+.contact-form button:hover {
+  background-color: #5188F0;
+  color: #000000
+}
+
 
 
 /*---------FOOTER----------*/
 
-.Footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw; /* Adjust the gap as needed */
-  padding: 10vw; /* Adjust padding based on viewport width */
-  padding-left: 20vw; /* Adjust padding based on viewport width */
-  padding-right: 20vw; /* Adjust padding based on viewport width */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
 }
 
-.Footer h1 {
-  font-size: 1.5vw;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.Footer p {
-  font-size: 1vw; /* Adjust font size based on viewport width */
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
 }
