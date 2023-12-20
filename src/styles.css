@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: #b9b9b9; /* Nando grey color */
+  background-color: #5188F0; /* Nando grey color */
   margin: 0; /* Adjust top and bottom margins for spacing */
 }
 
@@ -10,10 +10,22 @@ body {
   padding-left: 2vw; /* Add left padding */
   padding-right: 2vw; /* Add right padding */
   font-size: 1.2vw;
-  background-color: #b9b9b9;
+  background-color: #5188F0;
   color: #000000;
   gap: 2vw; /* Adjust the gap as needed */
-  border-bottom: 0.1vw solid #000000; /* Add border properties */
+  border-bottom: 0.2vw solid #000000; /* Add border properties */
+}
+
+.nav-bar-h3 a {
+  text-decoration: none; /* Remove default underline */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  cursor: pointer; /* Apply cursor pointer to the h3 elements */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect for both background and color */
+  background-color: #5188F0; /* Set initial background color */
+  color: #000000; /* Set initial font color */
+  padding: 1vw 2vw; /* Add padding for spacing */
+  border-radius: 1.5vw; /* Adjust the border-radius as needed */
 }
 
 .nav-bar-h3 {
@@ -27,18 +39,9 @@ body {
   gap: 2vw; /* Adjust the gap as needed */
 }
 
-.nav-bar-h3 h3 {
-  cursor: pointer; /* Apply cursor pointer to the h3 elements */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect for both background and color */
-  background-color: #b9b9b9; /* Set initial background color */
-  color: #000000; /* Set initial font color */
-  padding: 1vw 2vw; /* Add padding for spacing */
-  border-radius: 1.5vw; /* Adjust the border-radius as needed */
-}
-
-.nav-bar-h3 h3:not(.nav-bar-h3-name):hover {
-  background-color: #000000; /* Change background color on hover */
-  color: #b9b9b9; /* Change font color on hover */
+.nav-bar-h3 a:not(.nav-bar-h3-name):hover {
+  background-color: #434656; /* Change background color on hover */
+  color: #5188F0; /* Change font color on hover */
 }
 
 .nav-bar-h3-name {
@@ -62,6 +65,7 @@ body {
   padding-top: 5vw; /* Adjust padding based on viewport width */
   text-align: center;
   font-size: large;
+  padding-bottom: 12vw; /* Adjust padding based on viewport width */
 }
 
 .face {
@@ -101,7 +105,7 @@ body {
 
 .resume button {
   padding: 1vw 2vw; /* Adjust padding based on viewport width */
-  background-color: #b9b9b9;
+  background-color: #5188F0;
   color: white;
   font-size: 1vw; /* Adjust font size based on viewport width */
   cursor: pointer;
@@ -119,7 +123,7 @@ body {
 }
 
 .spacer {
-  aspect-ratio: 960/300;
+  aspect-ratio: 900/300;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,21 +131,21 @@ body {
   }
 
   .layer1 {
-    background-image: url('./assets/layered-steps-haikei.svg');
-    transform: rotate(180deg); /* Flip the image 180 degrees */
+    background-image: url('./assets/layered-steps-haikei-1.svg');
   }
 
 
 /*---------ABOUT----------*/
 
 .About {
-  background-color: #000000; /* Change background color on hover */
-  color: #518755;
+  background-color: #A7AABD; /* Change background color on hover */
+  color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1vw; /* Adjust the gap as needed */
+  padding-top: 12vw; /* Adjust padding based on viewport width */
   padding: 10vw; /* Adjust padding based on viewport width */
   padding-left: 20vw; /* Adjust padding based on viewport width */
   padding-right: 20vw; /* Adjust padding based on viewport width */
@@ -156,9 +160,19 @@ body {
   font-size: 1vw; /* Adjust font size based on viewport width */
 }
 
-.layer2 {
-  background-image: url('./assets/layered-steps-haikei.svg');
+#container3D canvas {
+  width: 30vw !important;
+  height: 30vw !important;
+  transform: scale(1.5); /* Scale the canvas */
+  top: 0;
+  left: 0;
 }
+
+.layer2 {
+  background-image: url('./assets/layered-steps-haikei-1.svg');
+  transform: rotate(180deg); /* Flip the image 180 degrees */
+}
+
 
 /*---------SKILLS----------*/
 
@@ -171,7 +185,7 @@ body {
   padding: 10vw; /* Adjust padding based on viewport width */
   padding-left: 20vw; /* Adjust padding based on viewport width */
   padding-right: 20vw; /* Adjust padding based on viewport width */
-  text-align: center;
+  text-align: justify;
 }
 
 .Skills h1 {
