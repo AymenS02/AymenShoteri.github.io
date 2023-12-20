@@ -65,7 +65,7 @@ body {
   padding-top: 5vw; /* Adjust padding based on viewport width */
   text-align: center;
   font-size: large;
-  padding-bottom: 12vw; /* Adjust padding based on viewport width */
+  padding-bottom: 1vw; /* Adjust padding based on viewport width */
 }
 
 .face {
@@ -157,8 +157,8 @@ body {
 #AboutMe {
   background-color: #A7AABD; /* Change background color on hover */
   display: flex;
-  gap: 2vw; /* Adjust the gap between elements */
-  padding: 10vw; /* Adjust padding as needed */
+  gap: 1vw; /* Adjust the gap between elements */
+  padding: 2vw; /* Adjust padding as needed */
   text-align: center;
   font-size: 1.0vw; /* Adjust font size based on viewport width */
 }
@@ -208,10 +208,21 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1vw; /* Adjust the gap as needed */
-  padding: 10vw; /* Adjust padding based on viewport width */
+  padding: 1vw; /* Adjust padding based on viewport width */
   padding-left: 20vw; /* Adjust padding based on viewport width */
   padding-right: 20vw; /* Adjust padding based on viewport width */
   text-align: justify;
+}
+
+#Skills .lists-container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: flex-start; /* To align the lists to the top */
+}
+
+#Skills .list {
+  flex: 1; /* Allow the lists to grow and occupy available space */
+  margin: 0 3vw; /* Adjust margins between the lists */
 }
 
 #Skills h1 {
@@ -222,28 +233,79 @@ body {
   font-size: 1vw; /* Adjust font size based on viewport width */
 }
 
-.lists-container {
+ul {
+  position: relative;
+  width: 450px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1)
+}
+
+ul li{
   display: flex;
+  background: rgb(255, 255, 255, .1);
+  padding: 10px 20px;
+  color: #000000;
+  margin: 5px 0;
+  transitions: .5s;
 }
 
-.list {
-  margin-right: 5vw; /* Adjust margin based on viewport width */
-  font-size: 0.75vw; /* Adjust font size based on viewport width */
+ul li:nth-child(1){
+  background: rgba(255, 255, 255, .6);
 }
 
-.list ul {
-  list-style: none;
-  padding: 0;
+ul li:nth-child(2){
+  background: rgba(255, 255, 255, .55);
 }
 
-.list h2 {
-  font-size: 1.5vw; /* Adjust font size based on viewport width */
-  margin-bottom: 0.8vw; /* Adjust margin based on viewport width */
+ul li:nth-child(3){
+  background: rgba(255, 255, 255, .5);
 }
 
-.list li {
-  margin-bottom: 0.4vw; /* Adjust margin based on viewport width */
+ul li:nth-child(3){
+  background: rgba(255, 255, 255, .45);
 }
+
+ul li:nth-child(4){
+  background: rgba(255, 255, 255, .4);
+}
+
+ul li:nth-child(5){
+  background: rgba(255, 255, 255, .35);
+}
+
+ul li:nth-child(6){
+  background: rgba(255, 255, 255, .3);
+}
+
+ul li:nth-child(7){
+  background: rgba(255, 255, 255, .25);
+}
+
+ul li:nth-child(8){
+  background: rgba(255, 255, 255, .2);
+}
+
+ul li:nth-child(9){
+  background: rgba(255, 255, 255, .1);
+}
+
+ul li span:nth-child(0){
+  width: 3vw;
+}
+
+ul li span:nth-child(1){
+  width: 32vw;
+}
+
+ul li:hover {
+  transform: scale(1.06) ;
+  background: #5188F0;
+  box-shadow: #000000 0 0 3px;
+}
+
+
+
 
 .languages li::before,
 .tools li::before {
@@ -266,7 +328,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1vw; /* Adjust the gap as needed */
-  padding: 10vw; /* Adjust padding based on viewport width */
+  padding: 1vw; /* Adjust padding based on viewport width */
   padding-left: 20vw; /* Adjust padding based on viewport width */
   padding-right: 20vw; /* Adjust padding based on viewport width */
   text-align: center;
@@ -302,6 +364,7 @@ body {
   height: auto;
   display: block;
   margin-bottom: 10px;
+  border: #ffffff 1px solid;
 }
 
 .project1 {
@@ -319,6 +382,7 @@ body {
   height: auto;
   display: block;
   margin-bottom: 10px;
+  border: #000000 1px solid;
 }
 
 .project-btn {
