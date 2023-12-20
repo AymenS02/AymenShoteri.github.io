@@ -417,41 +417,43 @@ ul li:hover {
   margin-bottom: 20px;
 }
 
-.contact-form {
-  max-width: 400px;
-  margin: 0 auto;
+
+#emailText {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid #000000;
 }
 
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #000000;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border: #000000 1px solid;
-}
-
-.contact-form button:hover {
+#emailText:hover {
   background-color: #5188F0;
-  color: #000000
+  cursor: pointer;
 }
+
+.notification {
+  display: none;
+  position: absolute;
+  background-color: #5188F0;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notification {
+  display: none;
+  position: absolute;
+  background-color: #5188F0;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: opacity 0.3s ease-in-out;
+}
+
 
 
 
@@ -465,7 +467,7 @@ footer {
 }
 
 .footer-content {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -484,7 +486,7 @@ footer {
 
 .footer-content ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .footer-content ul li:last-child {

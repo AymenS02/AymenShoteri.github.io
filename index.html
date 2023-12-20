@@ -181,15 +181,31 @@
 
       <section id="ContactMe">
         <h1>Contact Me</h1>
-        <div class="contact-form">
-          <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </section>
+        <h3 id="emailText">aymenshoteri@gmail.com</h3>
+        <span class="notification" id="copyNotification">*Copied to clipboard!*</span>
+      </section>      
+      
+      <script>
+        document.getElementById("emailText").addEventListener("click", function() {
+          const email = this.innerText;
+          navigator.clipboard.writeText(email)
+            .then(() => {
+              const notification = document.getElementById("copyNotification");
+              notification.style.display = "inline-block";
+              setTimeout(() => {
+                notification.style.opacity = "0";
+                setTimeout(() => {
+                  notification.style.display = "none";
+                  notification.style.opacity = "1";
+                }, 500);
+              }, 500);
+            })
+            .catch(err => {
+              console.error('Failed to copy: ', err);
+            });
+        });
+      </script>
+      
       
       <footer>
         <div class="footer-content">
