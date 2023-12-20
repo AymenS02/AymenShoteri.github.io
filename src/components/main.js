@@ -109,7 +109,7 @@ function animate() {
     // Rotate the 'porsche' model along the XY axis
     if (objToRender === 'porsche' && object) {
         // Increment rotation values for smooth rotation
-        object.rotation.y += 0.01; // Adjust the speed of rotation as needed
+        object.rotation.y += 0.007; // Adjust the speed of rotation as needed
     }
 
     // Update controls

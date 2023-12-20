@@ -14,26 +14,28 @@
   </head> 
 
   <body>
-    <div class="nav-bar"> 
+    <div id="nav-bar"> 
       <div class="nav-bar-h3">
-        <h3 class="nav-bar-h3-name"><a href=".Home">Aymen Shoteri</a></h3>
-        <h3><a href=".About Me">About Me</a></h3>
-        <h3><a href=".Skills">Experience</a></h3>
-        <h3><a href=".Projects">Projects</a></h3>
-        <h3><a href=".Contact Me">Contact Me</a></h3>
+        <h3 class="nav-bar-h3-name"><a href="#nav-bar">Aymen Shoteri</a></h3>
+        <h3><a href="#AboutMe">About Me</a></h3>
+        <h3><a href="#Skills">Experience</a></h3>
+        <h3><a href="#Projects">Projects</a></h3>
+        <h3><a href="#ContactMe">Contact Me</a></h3>
       </div>
     </div>
 
     <main>
-      <section class="Home">
+      <section id="Home">
 
         <div class="face">
           <img src="../src/assets/photoface.png" alt="[Profile Photo]">
         </div>
 
         <div class="Heady">
+          <h3 class="Home-Top">Hey, I'm</h3>
           <h1 class="Home-Name">Aymen Shoteri</h1>
           <h2 class="Home-Prof">Full Stack Developer</h2>
+          <p>I am currently a student at the University of McMaster studying Computer Science and Mathematics.</p>
           <a href="../src/assets/Aymen_Shoteri_Resume1.pdf" download class="resume">
             <button>Download Resume</button>
           </a>
@@ -43,30 +45,52 @@
 
       <div class="spacer layer1"></div>
       
-      <section class="About Me">
-        <h1>About Me</h1>
-        <p>
-          I am a full stack developer with a passion for learning and creating. I am currently a student at the University of McMaster studying Computer Science and Mathematics. 
-          Currently, I am looking for a full time position as a software developer or Data Analyst.
-        </p>
+      <section id="AboutMe">
+        <div class="carPhoto">
+          <img src="../src/assets/meCar.JPG" alt="[About Me Photo]">
+        </div>
+        <div class="aboutMe">
+          <h1>About Me</h1>
+          <p>
+            I'm passionate about software development and I'm always looking for opportunities to expand my skill set and gain experience in the field. I'm currently seeking an internship starting the Summer 2024 term.
+          </p>
+          <p>
+            I'm particularly drawn to the world of software development, especially in areas involving databases and their integration into software systems. My passion lies in crafting efficient and robust solutions that leverage the power of databases.
+          </p>
+          <p>
+            While pursuing my goal of becoming a software developer, I devote my time to personal projects that involve database-driven applications. I find joy in creating impactful software solutions and continuously expanding my skill set.
+          </p>
+          <p>
+            Beyond my professional endeavors, I enjoy engaging in personal projects, much like this website, and actively seek connections with individuals who share similar passions and interests.
+          </p>
+          <p>
+            I love cars, as you can tell from the photos on this page. I run a instagram account for car spotting at my university <b>@mcmaster_cars</b>, check it out!
+          </p>
+          <div id="container3D"></div>
+          <script type="module" src="../src/components/main.js" alt="cute-miata"></script>
+        </div>
+      </section>
+      
+
+      <div class="spacer layer2"></div>
+
+      <section id="Skills">
+        <h1>Experience</h1>
         
-        <div id="container3D"></div>
-        <script type="module" src="../src/components/main.js" alt="cute-miata"></script>
+      </section>
+
+      <div class="spacer layer1"></div>
+
+      <section id="Projects">
+        <h1>Projects</h1>
+
       </section>
 
       <div class="spacer layer2"></div>
 
-      <section class="Skills">
-        ssss
-      </section>
+      <section id="ContactMe">
+        <h1>Contact Me</h1>
 
-
-      <section class="Projects">
-        ssss
-      </section>
-
-      <section class="Contact Me">
-        asdafes
       </section>
 
     </main>
