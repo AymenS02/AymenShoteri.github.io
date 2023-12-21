@@ -172,13 +172,13 @@ body {
   align-items: center; /* Centers items horizontally */
 }
 
-.carPhoto {
+.meComp {
   width: 25vw;
   display: flex;
   align-items: flex-start; /* Centers items horizontally */
 }
 
-.carPhoto img {
+.meComp img {
   width: 100%;
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -454,38 +454,55 @@ ul li:hover {
   transition: opacity 0.3s ease-in-out;
 }
 
+.linkedin-link {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid #000000;
+  text-decoration: none;
+  color: #000; /* Change color to match your design */
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.linkedin-link:hover {
+  background-color: #5188F0;
+  color: #fff; /* Change text color on hover to ensure visibility */
+  cursor: pointer;
+}
+
+.linkedin-link img {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align the image vertically with text */
+  /* Add any other styles such as margins or padding if necessary */
+}
 
 
 
 /*---------FOOTER----------*/
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
 .footer-content {
-  max-width: 90vw;
-  margin: 0 auto;
+  width: 100vw; /* Set width to cover the entire viewport */
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.footer-content p {
-  margin: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 5vw; /* Adjust padding using viewport units for responsiveness */
+  box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .footer-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 .footer-content ul li {
-  display: inline;
   margin-right: 10px;
 }
 
@@ -496,4 +513,23 @@ footer {
 .footer-content ul li a {
   color: #fff;
   text-decoration: none;
+  white-space: nowrap; /* Prevent text wrapping */
 }
+
+/* Updated styles for responsiveness */
+.footer-content {
+  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  flex-wrap: wrap; /* Allow items to wrap if they exceed the width */
+}
+
+.footer-content ul {
+  flex-wrap: wrap; /* Allow list items to wrap if needed */
+  justify-content: center; /* Center list items */
+}
+
+.footer-content ul li {
+  margin-right: 10px; /* Maintain original spacing */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+
