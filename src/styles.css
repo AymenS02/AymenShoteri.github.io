@@ -61,22 +61,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2vw; /* Adjust the gap as needed */
-  padding-top: 5vw; /* Adjust padding based on viewport width */
+  gap: 20px; /* Adjust the gap as needed */
+  padding-top: 50px; /* Adjust padding based on px */
   text-align: center;
-  font-size: large;
-  padding-bottom: 1vw; /* Adjust padding based on viewport width */
+  font-size: 16px;
+  padding-bottom: 10px; /* Adjust padding based on px */
 }
 
 .face {
-  width: 22vw;
-  height: 22vw;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border: 2px solid black; /* Add a thin black border */
   position: relative; /* Add position to use for image positioning */
-  margin: 2vw; /* Adjust margin as needed */
+  margin: 20px; /* Adjust margin as needed */
 }
 
 .face img {
@@ -90,41 +90,38 @@ body {
   left: 0;
 }
 
-
-
 .Heady {
-  padding-left: 10vw; /* Adjust padding based on viewport width */
-  padding-right: 10vw; /* Adjust padding based on viewport width */
+  padding-left: 100px; /* Adjust padding based on px */
+  padding-right: 100px; /* Adjust padding based on px */
 }
 
 .Home-Top {
-  font-size: 1.3vw; /* Adjust as needed */
-  margin-bottom: -2vw;
+  font-size: 20px; /* Adjust as needed */
+  margin-bottom: -10px;
   color: #434656;
 }
 
 .Home-Name {
-  font-size: 3.3vw; /* Adjust as needed */
+  font-size: 50px; /* Adjust as needed */
 }
 
 .Home-Prof {
-  font-size: 1.6vw; /* Adjust as needed */
+  font-size: 24px; /* Adjust as needed */
   font-weight: bold;
   color: #434656;
-  margin-top: -1.4vw;
-
+  margin-top: -14px;
 }
 
 .resume {
   display: inline-block;
-  width: 15vw; /* Set width based on viewport width */
+  width: 120px; /* Set width based on px */
 }
 
 .resume button {
-  padding: 1vw 2vw; /* Adjust padding based on viewport width */
+  padding: 10px 20px; /* Adjust padding based on px */
   background-color: #5188F0;
   color: white;
-  font-size: 1vw; /* Adjust font size based on viewport width */
+  font-size: 16px; /* Adjust font size based on px */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Adding transition for color change */
 }
@@ -134,7 +131,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .Home {
+  #Home {
     flex-direction: column; /* Change flex direction on smaller screens */
   }
 }
@@ -145,16 +142,16 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  }
+}
 
-  .layer1 {
-    background-image: url('./assets/layered-steps-haikei-1.svg');
-  }
-
+.layer1 {
+  background-image: url('./assets/wave-haikei2.svg');
+}
 
 /*---------ABOUT----------*/
 
 #AboutMe {
+  border: 10%;
   background-color: #A7AABD; /* Change background color on hover */
   display: flex;
   gap: 1vw; /* Adjust the gap between elements */
@@ -195,7 +192,7 @@ body {
 
 
 .layer2 {
-  background-image: url('./assets/layered-steps-haikei-1.svg');
+  background-image: url('./assets/wave-haikei2.svg');
   transform: rotate(180deg); /* Flip the image 180 degrees */
 }
 
@@ -316,7 +313,7 @@ ul li:hover {
 }
 
 .layer1 {
-  background-image: url('./assets/layered-steps-haikei-1.svg');
+  background-image: url('./assets/wave-haikei2.svg');
 }
 
 /*---------PROJECTS----------*/
@@ -400,7 +397,7 @@ ul li:hover {
 }
 
 .layer2 {
-  background-image: url('./assets/layered-steps-haikei-1.svg');
+  background-image: url('./assets/wave-haikei2.svg');
   transform: rotate(180deg); /* Flip the image 180 degrees */
 }
 
