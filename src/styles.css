@@ -392,6 +392,10 @@ ul li:hover {
   border-radius: 4px;
 }
 
+.project-btn + .project-btn {
+  margin-top: 10px; 
+}
+
 .project-btn:hover {
   background-color: #5188F0;
 }
