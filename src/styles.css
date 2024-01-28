@@ -152,12 +152,13 @@ body {
 
 #AboutMe {
   border: 10%;
-  background-color: #A7AABD; /* Change background color on hover */
+  background-color: #1F2130; /* Change background color on hover */
   display: flex;
   gap: 1vw; /* Adjust the gap between elements */
   padding: 2vw; /* Adjust padding as needed */
   text-align: center;
   font-size: 1.0vw; /* Adjust font size based on viewport width */
+  color: #ffffff
 }
 
 .aboutMe {
@@ -319,7 +320,7 @@ ul li:hover {
 /*---------PROJECTS----------*/
 
 #Projects {
-  background-color: #A7AABD; /* Change background color on hover */
+  background-color: #1F2130; /* Change background color on hover */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -329,6 +330,7 @@ ul li:hover {
   padding-left: 20vw; /* Adjust padding based on viewport width */
   padding-right: 20vw; /* Adjust padding based on viewport width */
   text-align: center;
+  color: #ffffff;
 }
 
 #Projects h1 {
@@ -352,7 +354,7 @@ ul li:hover {
 
 .project2 h3 {
   margin-top: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #ffffff;
 
 }
 
@@ -371,7 +373,7 @@ ul li:hover {
 
 .project1 h3 {
   margin-top: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #ffffff;
 }
 
 .project1 img {
@@ -379,7 +381,7 @@ ul li:hover {
   height: auto;
   display: block;
   margin-bottom: 10px;
-  border: #000000 1px solid;
+  border: #ffffff 1px solid;
 }
 
 .project-btn {
@@ -387,8 +389,8 @@ ul li:hover {
   justify-content: center;
   align-items:flex-end;
   text-decoration: none;
-  color: black;
-  border: #000000 1px solid;
+  color: #ffffff;
+  border: #ffffff 1px solid;
   border-radius: 4px;
 }
 
