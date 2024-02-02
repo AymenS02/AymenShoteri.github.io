@@ -158,7 +158,16 @@ body {
   padding: 2vw; /* Adjust padding as needed */
   text-align: center;
   font-size: 1.0vw; /* Adjust font size based on viewport width */
-  color: #ffffff
+  color: #f0eded
+}
+
+@media screen and (max-width: 768px) {
+  #AboutMe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers items horizontally */
+  }
+  
 }
 
 .aboutMe {
@@ -169,6 +178,15 @@ body {
   flex-direction: column; /* Ensures child elements stack vertically */
   align-items: center; /* Centers items horizontally */
 }
+
+@media screen and (max-width: 768px) {
+  .aboutMe {
+    font-size: 10px;
+    margin: 20px 0; /* Adjust margin on smaller screens */
+  }
+  
+}
+
 
 .meComp {
   width: 25vw;
@@ -218,6 +236,14 @@ body {
   align-items: flex-start; /* To align the lists to the top */
 }
 
+@media screen and (max-width: 768px) {
+  #Skills .lists-container {
+    flex-direction: column; /* Change direction on smaller screens */
+    align-items: center; /* Center the lists */
+  }
+  
+}
+
 #Skills .list {
   flex: 1; /* Allow the lists to grow and occupy available space */
   margin: 0 3vw; /* Adjust margins between the lists */
@@ -227,13 +253,19 @@ body {
   font-size: 2.5vw; /* Adjust font size based on viewport width */
 }
 
+@media screen and (max-width: 768px) {
+  #Skills h1 {
+    font-size: 30px; /* Adjust font size based on viewport width */
+  }
+}
+
 #Skills p {
   font-size: 1vw; /* Adjust font size based on viewport width */
 }
 
 ul {
   position: relative;
-  width: 450px;
+  width: 60%px;
   padding: 10px;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.1)
@@ -344,6 +376,16 @@ ul li:hover {
 .projects {
   display: flex;
   gap: 20px; /* Spacing between columns */
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    flex-direction: column; /* Change direction on smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .project2 {
